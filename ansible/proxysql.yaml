@@ -1,0 +1,8 @@
+---
+- name: Ansible provisioning step
+  become: true
+  # any_errors_fatal: yes
+  hosts: proxysql
+  roles:
+    - os
+    - packages
